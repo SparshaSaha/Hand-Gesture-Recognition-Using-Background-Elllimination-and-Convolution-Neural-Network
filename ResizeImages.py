@@ -10,3 +10,5 @@ def resizeImage(imageName):
 
 for i in range(0, 11):
     resizeImage("SwingTest/swing_" + str(i) + '.png')
+
+
