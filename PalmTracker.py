@@ -40,7 +40,7 @@ def segment(image, threshold=25):
         segmented = max(cnts, key=cv2.contourArea)
         return (thresholded, segmented)
 
-if __name__ == "__main__":
+def main():
     # initialize weight for running average
     aWeight = 0.5
 
@@ -120,6 +120,7 @@ if __name__ == "__main__":
         if keypress == ord("s"):
             start_recording = True
 
+main()
 
 # free up memory
 camera.release()
