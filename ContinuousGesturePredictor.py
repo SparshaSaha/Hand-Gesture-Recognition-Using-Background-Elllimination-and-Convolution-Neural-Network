@@ -111,7 +111,7 @@ def main():
                     cv2.imwrite('Temp.png', thresholded)
                     resizeImage('Temp.png')
                     predictedClass, confidence = getPredictedClass()
-                    print("Class : " + str(predictedClass), "Confidence : " + str(confidence))
+                    print("Class : " + str(predictedClass), "Confidence : " + str(confidence * 100) + "%")
                 cv2.imshow("Thesholded", thresholded)
 
         # draw the segmented hand
