@@ -8,7 +8,7 @@ def resizeImage(imageName):
     img = img.resize((basewidth,hsize), Image.ANTIALIAS)
     img.save(imageName)
 
-for i in range(0, 11):
-    resizeImage("SwingTest/swing_" + str(i) + '.png')
+for i in range(0, 101):
+    resizeImage("Dataset/FistTest/fist_" + str(i) + '.png')
 
 

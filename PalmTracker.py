@@ -84,6 +84,7 @@ def main():
         # so that our running average model gets calibrated
         if num_frames < 30:
             run_avg(gray, aWeight)
+            print(num_frames)
         else:
             # segment the hand region
             hand = segment(gray)
@@ -97,7 +98,7 @@ def main():
                 # draw the segmented region and display the frame
                 cv2.drawContours(clone, [segmented + (right, top)], -1, (0, 0, 255))
                 if start_recording:
-                    cv2.imwrite("SwingTest/swing_" + str(image_num) + '.png', thresholded)
+                    cv2.imwrite("Dataset/FistTest/fist_" + str(image_num) + '.png', thresholded)
                     image_num += 1
                 cv2.imshow("Thesholded", thresholded)
 
@@ -114,7 +115,7 @@ def main():
         keypress = cv2.waitKey(1) & 0xFF
 
         # if the user pressed "q", then stop looping
-        if keypress == ord("q") or image_num > 10:
+        if keypress == ord("q") or image_num > 100:
             break
         
         if keypress == ord("s"):
