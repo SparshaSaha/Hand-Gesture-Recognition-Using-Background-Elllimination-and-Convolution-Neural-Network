@@ -98,6 +98,8 @@ def main():
                 # draw the segmented region and display the frame
                 cv2.drawContours(clone, [segmented + (right, top)], -1, (0, 0, 255))
                 if start_recording:
+
+                    # Mention the directory in which you wanna store the images followed by the image name
                     cv2.imwrite("Dataset/FistTest/fist_" + str(image_num) + '.png', thresholded)
                     image_num += 1
                 cv2.imshow("Thesholded", thresholded)
