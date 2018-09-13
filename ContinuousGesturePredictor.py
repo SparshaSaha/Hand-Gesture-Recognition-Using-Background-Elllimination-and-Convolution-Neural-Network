@@ -73,7 +73,7 @@ def main():
         (grabbed, frame) = camera.read()
 
         # resize the frame
-        frame = imutils.resize(frame, width=700)
+        frame = imutils.resize(frame, width = 700)
 
         # flip the frame so that it is not the mirror view
         frame = cv2.flip(frame, 1)

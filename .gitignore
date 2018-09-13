@@ -1,5 +1,4 @@
-/Dataset
 .ipynb_*
 checkpoint
-*.png
+Temp.png
 GestureRecogModel*
