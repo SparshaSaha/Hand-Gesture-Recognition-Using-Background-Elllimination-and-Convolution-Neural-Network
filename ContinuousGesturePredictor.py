@@ -172,41 +172,35 @@ def showStatistics(predictedClass, confidence):
 
 # Model defined
 tf.reset_default_graph()
-convnet=input_data(shape = [None,89,100,1],name = 'input')
-convnet=conv_2d(convnet,32,2,activation = 'relu')
+convnet=input_data(shape=[None,89,100,1],name='input')
+convnet=conv_2d(convnet,32,2,activation='relu')
 convnet=max_pool_2d(convnet,2)
-convnet=conv_2d(convnet,64,2,activation = 'relu')
-convnet=max_pool_2d(convnet,2)
-
-convnet=conv_2d(convnet,128,2,activation = 'relu')
+convnet=conv_2d(convnet,64,2,activation='relu')
 convnet=max_pool_2d(convnet,2)
 
-convnet=conv_2d(convnet,256,2,activation = 'relu')
+convnet=conv_2d(convnet,128,2,activation='relu')
 convnet=max_pool_2d(convnet,2)
 
-convnet=conv_2d(convnet,512,2,activation = 'relu')
+convnet=conv_2d(convnet,256,2,activation='relu')
 convnet=max_pool_2d(convnet,2)
 
-convnet=conv_2d(convnet,1024,2,activation = 'relu')
+convnet=conv_2d(convnet,256,2,activation='relu')
 convnet=max_pool_2d(convnet,2)
 
-convnet=conv_2d(convnet,1024,2,activation = 'relu')
+convnet=conv_2d(convnet,128,2,activation='relu')
 convnet=max_pool_2d(convnet,2)
 
-convnet=conv_2d(convnet,128,2,activation = 'relu')
+convnet=conv_2d(convnet,64,2,activation='relu')
 convnet=max_pool_2d(convnet,2)
 
-convnet=conv_2d(convnet,64,2,activation = 'relu')
-convnet=max_pool_2d(convnet,2)
-
-convnet=fully_connected(convnet,1024,activation = 'relu')
+convnet=fully_connected(convnet,1000,activation='relu')
 convnet=dropout(convnet,0.75)
 
-convnet=fully_connected(convnet,3,activation = 'softmax')
+convnet=fully_connected(convnet,3,activation='softmax')
 
-convnet=regression(convnet,optimizer = 'adam',learning_rate = 0.001,loss = 'categorical_crossentropy',name = 'regression')
+convnet=regression(convnet,optimizer='adam',learning_rate=0.001,loss='categorical_crossentropy',name='regression')
 
-model=tflearn.DNN(convnet,tensorboard_verbose = 0)
+model=tflearn.DNN(convnet,tensorboard_verbose=0)
 
 # Load Saved Model
 model.load("GestureRecogModel.tfl")
