@@ -14,3 +14,8 @@ This is a simple application of Convolution Neural Networks combined with backgr
 * Pillow (PIL)
 * Imutils
 
+## File Description
+
+[PalmTracker.py](https://github.com/SparshaSaha/Hand-Gesture-Recognition-Using-Background-Elllimination-and-Convolution-Neural-Network/blob/master/PalmTracker.py) : Run this file to generate custom datasets. Go into the file and change the name of the directory and make other appropriate changes.
+
+ResizeImages.py : Run this file after PalmTracker.py in order to 
