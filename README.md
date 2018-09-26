@@ -45,3 +45,5 @@ I kind of saw that 50 iterations kind of trains the model well and there is no i
 The model achieves an accuracy of **96.6%** on the validation dataset.
 
 The ratio of training set to validation set is **1000 : 100**.
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
