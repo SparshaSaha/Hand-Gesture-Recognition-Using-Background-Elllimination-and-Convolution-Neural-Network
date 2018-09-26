@@ -38,7 +38,7 @@ He has written an awesome article on the problem and you can read it up [here](h
 
 The network contains **7** hidden convolution layers with **Relu** as the activation function and **1** Fully connected layer.
 
-The network is trained across 50 iterations with a batch size of 64.
+The network is trained across **50** iterations with a batch size of **64**.
 
 I kind of saw that 50 iterations kind of trains the model well and there is no increase in validation accuracy along the lines so that should be enough.
 
