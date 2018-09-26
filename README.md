@@ -46,4 +46,17 @@ The model achieves an accuracy of **96.6%** on the validation dataset.
 
 The ratio of training set to validation set is **1000 : 100**.
 
+## How to run the RealTime prediction
+
+Run the [ContinuousGesturePredictor.py](https://github.com/SparshaSaha/Hand-Gesture-Recognition-Using-Background-Elllimination-and-Convolution-Neural-Network/blob/master/ContinuousGesturePredictor.py) file and you will see a window named **Video Feed** appear on screen. Wait for a while until a window named **Thresholded** appears.
+
+The next step involves pressing **"s"** on your keyboard in order to start the real-time prediction.
+
+Bring your hand in the **Green Box** drawn inside **Video Feed** window in order to see the predictions.
+Look in demo for some visual clarity.
+
+## Demo of how things look on the go
+
+Well now it's time for some demo.
+
 ![Alt Text](https://github.com/SparshaSaha/Hand-Gesture-Recognition-Using-Background-Elllimination-and-Convolution-Neural-Network/blob/master/Demo.gif)
