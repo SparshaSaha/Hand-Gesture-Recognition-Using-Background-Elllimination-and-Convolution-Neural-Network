@@ -46,4 +46,4 @@ The model achieves an accuracy of **96.6%** on the validation dataset.
 
 The ratio of training set to validation set is **1000 : 100**.
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/SparshaSaha/Hand-Gesture-Recognition-Using-Background-Elllimination-and-Convolution-Neural-Network/blob/master/Demo.gif)
