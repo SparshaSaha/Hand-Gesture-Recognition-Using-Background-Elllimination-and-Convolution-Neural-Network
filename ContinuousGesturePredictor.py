@@ -203,6 +203,6 @@ convnet=regression(convnet,optimizer='adam',learning_rate=0.001,loss='categorica
 model=tflearn.DNN(convnet,tensorboard_verbose=0)
 
 # Load Saved Model
-model.load("GestureRecogModel.tfl")
+model.load("TrainedModel/GestureRecogModel.tfl")
 
 main()

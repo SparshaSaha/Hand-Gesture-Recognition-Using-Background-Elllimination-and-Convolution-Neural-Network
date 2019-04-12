@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\t-spsah\\Documents\\Hand-Gesture-Recognition-Using-Background-Elllimination-and-Convolution-Neural-Network\\TrainedModel\\GestureRecogModel.tfl"
+all_model_checkpoint_paths: "C:\\Users\\t-spsah\\Documents\\Hand-Gesture-Recognition-Using-Background-Elllimination-and-Convolution-Neural-Network\\TrainedModel\\GestureRecogModel.tfl"
