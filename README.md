@@ -55,10 +55,6 @@ The next step involves pressing **"s"** on your keyboard in order to start the r
 Bring your hand in the **Green Box** drawn inside **Video Feed** window in order to see the predictions.
 Look in demo for some visual clarity.
 
-## VERY IMPORTANT NOTE FOR THE DEVELOPERS USING THIS
-
-The trained tensorflow model isn't present in the repo. Thus you guys need to run *ModelTrainer.ipynb* before you run *ContinuousGesturePredictor.py*
-
 ## Demo of how things look on the go
 
 Well now it's time for some demo.
