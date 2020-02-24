@@ -7,9 +7,9 @@ This is a simple application of Convolution Neural Networks combined with backgr
 ## Requirements
 
 * Python3
-* Tensorflow
+* Tensorflow version=1.13.1
 * TfLearn
-* Opencv (cv2) for python3
+* Opencv headless (cv2) for python3
 * Numpy
 * Pillow (PIL)
 * Imutils
